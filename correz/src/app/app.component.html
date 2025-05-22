@@ -5,3 +5,7 @@
 @for(rents of vettRent; track rents){
   <app-rented [rent]="rents"></app-rented>
 }
+
+@for(ele of vettRent; track ele){
+  <app-rent-list [elenc]="ele"></app-rent-list>
+}
