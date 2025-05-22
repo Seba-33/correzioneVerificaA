@@ -1,3 +1,7 @@
 @for(mez of vettMezzi; track mez){
   <app-driving-list [mezz]="mez" [nol] = "vettRent"></app-driving-list>
 }
+
+@for(rents of vettRent; track rents){
+  <app-rented [rent]="rents"></app-rented>
+}

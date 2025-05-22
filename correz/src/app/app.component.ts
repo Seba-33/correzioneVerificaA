@@ -5,11 +5,12 @@ import { Mezzi } from './Models/driving.model';
 import { HttpClient } from '@angular/common/http';
 import { DrivingListComponent } from './driving-list/driving-list.component';
 import { RentModel } from './Models/rent.model';
+import { RentedComponent } from './rented/rented.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,DrivingListComponent],
+  imports: [RouterOutlet,DrivingListComponent,RentedComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit {
   data! : object
   http!: HttpClient
   vettMezzi: Mezzi[] = []
+
   vettRent : RentModel[] = []
 
   constructor(http: HttpClient){this.http = http}
