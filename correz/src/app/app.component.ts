@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { Mezzi } from './Models/driving.model';
 import { HttpClient } from '@angular/common/http';
 import { DrivingListComponent } from './driving-list/driving-list.component';
+import { RentModel } from './Models/rent.model';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
   data! : object
   http!: HttpClient
   vettMezzi: Mezzi[] = []
+  vettRent : RentModel[] = []
 
   constructor(http: HttpClient){this.http = http}
 

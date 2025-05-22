@@ -12,6 +12,6 @@ export class DrivingListComponent {
   @Input() mezz! : Mezzi
 
   noleggia(nGiorni: HTMLInputElement){
-    console.log(" Tipo: " + this.mezz.tipo + " Descrizione: " + this.mezz.descrizione + " Tariffa: " + this.mezz.tariffa + " Noleggi: " + nGiorni.value)
+    console.log(" Tipo: " + this.mezz.tipo + " Descrizione: " + this.mezz.descrizione + " Tariffa: " + this.mezz.tariffa + " ValutazioneMedia: " + this.mezz.valutazionemedia + " Noleggi: " + nGiorni.value)
   }
 }
